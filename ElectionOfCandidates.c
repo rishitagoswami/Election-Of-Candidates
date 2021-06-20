@@ -20,7 +20,7 @@ int main(){
 	printf("\n\n\nChoose what you want to open.");
 	printf("\n\n1. Cast a vote.");
 	printf("\n2. Check the vote statistics.");
-	printf("\n3. Check the winner of the elections.");
+	printf("\n3. Check the elected representative with maximum votes.");
 	printf("\n4. Exit.");
 	printf("\nChoose one option: ");
 	scanf("%d", &choice);
@@ -84,7 +84,7 @@ void checkVotes(){
 }
 
 void checkWinner(){
-	printf("\n\n**THE WINNER IS:**");
+	printf("\n\n**THE ELECTED REPRESENTATIVE WITH MAXIMUM VOTES IS:**");
 	if(voteCount1>voteCount2 && voteCount1>voteCount3 && voteCount1>voteCount4 && voteCount1>voteCount5 && voteCount1>voteCount6){
 		printf("\n%s \nvotes recieved: %d", candidate1, voteCount1);
 	}
@@ -104,6 +104,6 @@ void checkWinner(){
 		printf("\n%s \nvotes recieved: %d", candidate6, voteCount6);
 	}
 	else{
-		printf("NO WIN SITUATION.");
+		printf("\nNO WIN SITUATION.");
 	}
 }
