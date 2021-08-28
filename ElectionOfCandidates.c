@@ -41,6 +41,7 @@ int main(){
 }
 
 void castVote(){
+	system("CLS");
 	int candidateNum;
 	printf("\n\nCHOOSE YOUR LEADER AMONG THESE CANDIDATES.");
 	printf("\nCandidate number 1: %s", candidate1);
@@ -74,6 +75,7 @@ void castVote(){
 }
 
 void checkVotes(){
+	system("CLS");
 	printf("\n\nTotal number of votes of each candidate: ");
 	printf("\n%s: %d", candidate1, voteCount1);
 	printf("\n%s: %d", candidate2, voteCount2);
@@ -84,6 +86,7 @@ void checkVotes(){
 }
 
 void checkWinner(){
+	system("CLS");
 	printf("\n\n**THE ELECTED REPRESENTATIVE WITH MAXIMUM VOTES IS:**");
 	if(voteCount1>voteCount2 && voteCount1>voteCount3 && voteCount1>voteCount4 && voteCount1>voteCount5 && voteCount1>voteCount6){
 		printf("\n%s \nvotes recieved: %d", candidate1, voteCount1);
